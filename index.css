@@ -198,17 +198,10 @@ input[type='number']::placeholder {
     padding: 0 16px; }
   .line {
     width: 90%; }
-  
-    .toggle_wrapper img {
-    height: 50px; 
-    
-  }
-
-
-  .img .img_div{
-    font-size: 0.9rem;
-  }
-  
+  .toggle_wrapper img {
+    height: 40px; }
+  .toggle_wrapper .img_div {
+    font-size: 0.6rem; }
   .weight label {
     font-size: 1rem; }
   .weight input {
