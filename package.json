@@ -1,0 +1,16 @@
+{
+  "name": "calccatmeal",
+  "version": "1.0.0",
+  "description": "calculate how much to feed cats.",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "node-sass index.scss index.css"
+    
+  },
+  "author": "Carolyn",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "save-dev": "^0.0.1-security"
+  }
+}

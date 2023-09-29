@@ -1,0 +1,215 @@
+body {
+  background-color: #FFFEC4;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: #393E46; }
+
+.title {
+  color: #393E46;
+  text-shadow: 1px 1px 3px #9F8772; }
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  position: relative; }
+
+.active_level {
+  margin: 16px auto 0;
+  font-size: 1.5rem;
+  color: #196e6a;
+  font-weight: bold; }
+
+.tab {
+  margin: 2px 0 30px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px;
+  color: #36bab4; }
+  .tab label {
+    font-size: 1.5rem; }
+
+.line {
+  position: absolute;
+  top: 98px;
+  width: 100%;
+  height: 3px;
+  background-color: #E7E7E7; }
+
+.toggle_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px auto; }
+
+.img {
+  position: relative; }
+  .img img {
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0.6; }
+  .img .img_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #36bab4;
+    text-shadow: 2px 2px 11px  black; }
+
+.toggle input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden; }
+
+.toggle label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 150px;
+  height: 60px;
+  background: #f0efa9;
+  display: block;
+  border-radius: 100px;
+  position: relative; }
+
+.toggle label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 90px; }
+
+.toggle input:checked + label {
+  background: #36bab4; }
+
+.toggle input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%); }
+
+.toggle label:active:after {
+  width: 130px; }
+
+.weight {
+  background-color: #ebfcfc;
+  border-radius: 10px;
+  padding: 32px;
+  width: 50%;
+  margin: auto; }
+  .weight label {
+    text-align: center;
+    color: #393E46;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block; }
+  .weight input {
+    display: block;
+    margin: 16px auto;
+    font-weight: 700;
+    text-align: center;
+    transform: scale(1.8); }
+
+input[type='number']::placeholder {
+  text-align: center; }
+
+.desc {
+  font-weight: 700;
+  color: #393E46;
+  line-height: 1.5rem;
+  text-align: center; }
+
+.card_wrapper .card .top_section {
+  padding: 8px; }
+
+.card_wrapper .card .top_section p {
+  margin: 4px 0; }
+
+.card_wrapper .card .goal {
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.card_wrapper .card .goal_level {
+  font-size: 2rem;
+  color: #36bab4; }
+
+.card_wrapper {
+  margin: 0 auto;
+  display: flex; }
+  .card_wrapper .card {
+    background-color: #ebfcfc;
+    border-radius: 10px;
+    margin: 16px;
+    padding: 16px 32px;
+    box-shadow: 0px 2px 12px 1px black;
+    text-align: center;
+    font-weight: bold; }
+    .card_wrapper .card .top_section {
+      padding: 8px; }
+      .card_wrapper .card .top_section p {
+        margin: 4px 0; }
+    .card_wrapper .card .goal {
+      text-transform: uppercase; }
+      .card_wrapper .card .goal span {
+        display: none; }
+    .card_wrapper .card .goal_level {
+      font-size: 1.5rem;
+      color: #36bab4; }
+    .card_wrapper .card hr {
+      border: 1px solid black;
+      border-radius: 2px; }
+    .card_wrapper .card .total {
+      background-color: white;
+      font-size: 1.5rem;
+      color: #36bab4;
+      font-weight: bold; }
+
+@media only screen and (max-width: 750px) {
+  .card {
+    width: 100%; }
+  .card_wrapper {
+    flex-wrap: wrap; } }
+
+@media only screen and (max-width: 600px) {
+  .body {
+    padding: 0 16px; }
+  .title {
+    font-size: 1.5rem;
+    text-align: center; }
+  .tab {
+    padding: 5px; }
+  .tab label {
+    font-size: 1rem; }
+  .container {
+    padding: 0 16px; }
+  .line {
+    width: 90%; }
+  
+    .toggle_wrapper img {
+    height: 50px; 
+    
+  }
+
+
+  .img .img_div{
+    font-size: 0.9rem;
+  }
+  
+  .weight label {
+    font-size: 1rem; }
+  .weight input {
+    width: 70%; } }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script language="JavaScript" type = "text/javascript" src="index.js"></script>
+    <title>How much raw food to feed my cat?</title>
+</head>
+<body>
+    <h1 class="title">How Much Should My Cat Eat Per Day?</h1>
+    <div class="container">  
+        <p class="active_level">How active is your cat?</p>
+        <div class="tab">
+            
+            <div>
+                <input type="radio" id="inactive" value="0" name="level">
+                <label for="inactive">Inactive</label>
+            
+            </div>
+            <div>
+                <input type="radio" id="normal" value="1" name="level" required   >
+                <label for="normal">Normal</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="active" value="2" name="level">
+                <label for="active">Active</label>
+            </div>     
+        </div>
+
+        <div class="line"></div>
+
+
+
+
+        <div class="toggle_wrapper">
+            <div class="img">
+                <img src="img/cat.jpg" alt="cat">
+                <div class="img_div">CAT</div>
+            </div>
+            
+            <div class="toggle">
+                <input type="checkbox" id="switch" />
+                <label for="switch"></label>
+            </div>
+            <div class="img">
+                <img src="img/kitten.jpg" alt="Kitten">
+                <div class="img_div">KITTEN</div>
+            </div>
+            
+        </div> 
+        
+    
+          
+
+
+
+        
+        <div class="weight">
+            <label for="curweight"> Enter the cat's current weight in pound:</label>
+            <input type="number" name="curweight" id="curweight" placeholder="0.0 lb">
+        </div>
+        
+        <p class="desc">
+            We will calculate the appropriate meal portion for your cat based on their daily activity level. You will have three options to choose from: gaining weight, maintaining their current weight, or losing weight.
+        </p>
+
+        <div class="card_wrapper">
+
+            <div class="card">
+                <div class="top_section">
+                    <p class="goal">Goal</p>
+                    <p class="goal_level">Lose Weight</p>
+                </div>
+                <hr>
+                <p>The daily portion for your cat is</p>
+                <div class="total"><p id="lose">0.0 oz</p></div>
+                
+            </div>
+
+            <div class="card">
+                <div class="top_section">
+                    <p class="goal">Goal</p>
+                    <p class="goal_level">Maintain Weight</p>
+                </div>
+                <hr>
+                <p>The daily portion for your cat is</p>
+                <div class="total"><p id="maintain">0.0 oz</p></div>
+                
+            </div>
+
+            <div class="card">
+                <div class="top_section">
+                    <p class="goal">Goal <span>Kitten</span></p>
+                    <p class="goal_level">Gain Weight</p>
+                </div>
+                <hr>
+                <p>The daily portion for your cat is</p>
+                <div class="total"><p id="gain">0.0 oz</p></div>
+                
+            </div>
+
+        </div>
+
+    </div>
+     
+</body>
+</html>
